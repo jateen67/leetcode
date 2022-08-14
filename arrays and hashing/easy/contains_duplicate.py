@@ -9,3 +9,6 @@ def containsDuplicate(nums):
 
 
 print(containsDuplicate([1, 2, 3, 4, 5]))
+
+# time complexity: o(n)
+# space complexity: o(n)
