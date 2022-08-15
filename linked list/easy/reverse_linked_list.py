@@ -28,7 +28,7 @@ n.next = Node(2)
 n.next.next = Node(3)
 n.next.next.next = Node(4)
 n.next.next.next.next = Node(5)
-print(reverseLinkedList(n))
+reverseLinkedList(n)
 
 # time complexity: o(n)
 # space complexity: o(1)

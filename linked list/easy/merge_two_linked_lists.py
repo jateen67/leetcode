@@ -37,7 +37,7 @@ n.next.next = Node(4)
 n2 = Node(1)
 n2.next = Node(3)
 n2.next.next = Node(4)
-print(mergeTwoLists(n, n2))
+mergeTwoLists(n, n2)
 
 # time complexity: o(n)
 # space complexity: o(n)
