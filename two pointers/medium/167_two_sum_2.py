@@ -13,3 +13,6 @@ def twoSum(numbers, target):
 
 
 print(twoSum([2, 7, 11, 15], 9))
+
+# time complexity: o(n)
+# space complexity: o(1)
