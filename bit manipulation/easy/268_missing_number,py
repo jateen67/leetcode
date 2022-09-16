@@ -1,0 +1,14 @@
+def missing(nums):
+    res = 0
+    l = len(nums)
+
+    for i in range(len(nums)):
+        res = res ^ i ^ nums[i]
+
+    return res ^ l
+
+
+print(missing([0, 1, 2, 4, 5, 6]))
+
+# time complexity: o(n)
+# space complexity: o(1)
