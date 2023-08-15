@@ -30,5 +30,5 @@ def spiral(matrix):
 
 print(spiral([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 
-# time complexity: o(n)
-# space complexity: o(1)
+# time complexity: o(m*n)
+# space complexity: o(n)

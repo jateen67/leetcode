@@ -1,5 +1,4 @@
 def rotate(matrix):
-
     l = 0
     r = len(matrix) - 1
 

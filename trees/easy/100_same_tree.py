@@ -12,7 +12,7 @@ def sameTree(p, q):
         return False
     if p.val != q.val:
         return False
-    return (sameTree(p.left, q.left) and sameTree(p.right, q.right))
+    return sameTree(p.left, q.left) and sameTree(p.right, q.right)
 
 
 def printLevel(root, level):
@@ -20,7 +20,7 @@ def printLevel(root, level):
         return False
 
     if level == 1:
-        print(root.val, end=' ')
+        print(root.val, end=" ")
         return True
 
     left = printLevel(root.left, level - 1)
@@ -33,7 +33,7 @@ def levelOrderTraversal(root):
     level = 1
     while printLevel(root, level):
         level = level + 1
-    print('\n')
+    print("\n")
 
 
 n = Node(4)
@@ -48,5 +48,5 @@ levelOrderTraversal(n)
 levelOrderTraversal(n2)
 print(sameTree(n, n2))
 
-# time complexity: o(n)
+# time complexity: o(min(s, t))
 # space complexity: o(h) h being the height of the tree since because of recursion more method calls will be placed on the application memory stack

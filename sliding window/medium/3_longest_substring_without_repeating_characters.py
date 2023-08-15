@@ -13,7 +13,7 @@ def sub(s):
     return res
 
 
-print(sub('abcabcbb'))
+print(sub("abcabcbb"))
 
-# time complexity: o(n)
+# time complexity: o(2n)
 # space complexity: o(n)

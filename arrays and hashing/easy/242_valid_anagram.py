@@ -16,7 +16,7 @@ def validAnagram(s, t):
     return elements_in_s == elements_in_t
 
 
-print(validAnagram('car', 'ar'))
+print(validAnagram("car", "ar"))
 
 # time complexity: o(n)
 # space complexity: o(n)

@@ -30,5 +30,5 @@ def search(matrix, target):
 
 print(search([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 3))
 
-# time complexity: o(log(n))
+# time complexity: o(log(m*n))
 # space complxity: o(1)

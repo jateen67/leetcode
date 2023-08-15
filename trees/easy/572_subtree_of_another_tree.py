@@ -12,7 +12,7 @@ def sub(root, subRoot):
         return False
     if same(root, subRoot):
         return True
-    return (sub(root.left, subRoot) or sub(root.right, subRoot))
+    return sub(root.left, subRoot) or sub(root.right, subRoot)
 
 
 def same(root, subRoot):
@@ -25,7 +25,7 @@ def same(root, subRoot):
     if root.val != subRoot.val:
         return False
 
-    return (same(root.left, subRoot.left) and same(root.right, subRoot.right))
+    return same(root.left, subRoot.left) and same(root.right, subRoot.right)
 
 
 def inOrder(head):
@@ -48,5 +48,5 @@ subRoot.right = Node(2)
 
 print(sub(root, subRoot))
 
-# time complexity: o(n)
+# time complexity: o(s*t)
 # space complexity: o(n)
