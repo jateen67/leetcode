@@ -7,7 +7,8 @@ class MinStack:
         self.stack.append(val)
         if not self.minStack:
             self.minStack.append(val)
-        self.minStack.append(min(val, self.minStack[-1]))
+        else:
+            self.minStack.append(min(val, self.minStack[-1]))
 
     def pop(self):
         if self.stack:
@@ -20,6 +21,7 @@ class MinStack:
 
     def getMin(self):
         return self.minStack[-1]
+
 
 # time complexity: o(1)
 # space complxity: o(n)
