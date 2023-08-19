@@ -1,13 +1,12 @@
-def daily(temps):
-    res = [0] * len(temps)
+def daily(temperatures):
     stack = []
+    res = [0] * len(temperatures)
 
-    for i in range(len(temps)):
-        while stack and temps[i] > stack[-1][0]:
-            popped = stack.pop()
-            idx = popped[1]
+    for i in range(len(temperatures)):
+        while stack and stack[-1][0] < temperatures[i]:
+            temp, idx = stack.pop()
             res[idx] = i - idx
-        stack.append((temps[i], i))
+        stack.append((temperatures[i], i))
 
     return res
 
