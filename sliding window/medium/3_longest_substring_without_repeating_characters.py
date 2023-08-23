@@ -15,5 +15,5 @@ def sub(s):
 
 print(sub("abcabcbb"))
 
-# time complexity: o(2n)
+# time complexity: o(n)
 # space complexity: o(n)
