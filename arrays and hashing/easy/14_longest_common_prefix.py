@@ -13,5 +13,5 @@ def longestCommonPrefix(strs):
 
 print(longestCommonPrefix(["flower", "flow", "flight"]))
 
-# time complexity: o(N) -> N = number of characters in all words combined
+# time complexity: o(min(n) * m) -> n = length of all words
 # space complexity: o(1)

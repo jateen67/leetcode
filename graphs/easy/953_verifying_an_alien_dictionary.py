@@ -21,8 +21,5 @@ def isAlienSorted(words, order):
 
 print(isAlienSorted(["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz"))
 
-# time complexity: o(m * n)
-# space complexity: o(m * n)
-
-# optimized time complexity: o(m * n)
-# optimized space complexity: o(1)
+# time complexity: o(n * m) -> n = number of characters per word
+# space complexity: o(1)

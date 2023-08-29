@@ -24,5 +24,5 @@ def numUniqueEmails(emails):
 
 print(numUniqueEmails(["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"]))
 
-# time complexity: o(N) -> N = number of characters in all words combined
+# time complexity: o(n * m) -> n = number of characters per word
 # space complexity: o(n)
