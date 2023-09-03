@@ -12,3 +12,7 @@ class NumArray:
             if left == 0
             else self.prefix[right] - self.prefix[left - 1]
         )
+
+
+# time complexity: o(1) for sumRange
+# time complexity: o(n)
