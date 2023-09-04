@@ -8,14 +8,13 @@ def wordPattern(pattern, s):
             word += s[p]
             p += 1
 
-        if pattern[i] not in char_to_word:
-            if word in word_to_char:
-                return False
-            char_to_word[pattern[i]] = word
-            word_to_char[word] = pattern[i]
-        else:
-            if char_to_word[pattern[i]] != word:
-                return False
+        if pattern[i] in char_to_word and char_to_word[pattern[i]] != word:
+            return False
+        if word in word_to_char and word_to_char[word] != pattern[i]:
+            return False
+
+        char_to_word[pattern[i]] = word
+        word_to_char[word] = pattern[i]
 
         if p >= len(s) and i < len(pattern) - 1:
             return False
